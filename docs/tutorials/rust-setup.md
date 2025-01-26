@@ -122,3 +122,7 @@ git push -u origin main
 6.3: Put it all in one command with `cargo run`
 !!! note
     The cargo run command compiles the program and then runs it in just one step!
+
+
+
+Written in part with assistance from the COMP423 Starting a Static Website Project with MkDocs webpage.
