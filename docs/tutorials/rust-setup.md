@@ -123,7 +123,7 @@ cd hello-comp-423
 cargo build
 ````
 !!! note
-    Similar to `gcc` used for compiling C programs.
+    Similar to `gcc` with the `-o' flag used for compiling C programs without running them.
 
 6.2: Run your program
 ````bash
