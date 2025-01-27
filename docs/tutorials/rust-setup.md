@@ -4,14 +4,14 @@
 * Reviewer: [Mariana Rodriguez-Pacheco](http://github.com/marianarp754)
 
 
-# Prerequisites
-1. GitHub Account
-2. Git Installed
-3. VS Code Installed
-4. Docker Installed
+# **Prerequisites**
+1. [GitHub](https://github.com) Account
+2. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) Installed
+3. [VS Code](https://code.visualstudio.com/) Installed
+4. [Docker](https://www.docker.com/products/docker-desktop) Installed
 
 
-# Git & GitHub Setup
+# **Git & GitHub Setup**
 ## Step 1 Create Local Directory & Get Started with Git
 1.1: Open a terminal
 
@@ -48,7 +48,7 @@ git commit -m "Initial commit with README"
 2.3: Create Repository
 
 ## Step 3 Link GitHub
-3.1: Add your GitHub repo as a remote:
+3.1: Add your GitHub repo as a remote
 ````bash
 git remote add origin https://github.com/<username>/rust-hello-comp423.git
 ````
@@ -61,7 +61,7 @@ git push -u origin main
 ````
 
 
-# Development Container Setup
+# **Development Container Setup**
 ## Step 4 Configure Development Container
 4.1: Open the `rust-hello-comp423` directory in VS Code through File > Open Folder
 
@@ -104,25 +104,55 @@ git push -u origin main
 !!! note
     Close your current terminal and open a new one. Run `rustc --version` to check that your dev container is running a recent version of Rust.
 
-# Finalize Hello COMP423 Message
+# **Finalize Hello COMP423 Message**
 ## Step 5 Edit & Compile Message
 
-5.1: Open the directory created by `cargo new` with the `cd hello-comp-423` command
+5.1: Open the directory created by `cargo new`
+````bash
+cd hello-comp-423
+````
 
 5.2: Open `hello-comp-423/src/main.rs` and edit the `println!` message to say "Hello COMP423"
 
 5.3: Save changes
 
-# Build & Check Out Our Program
-## Step 6
-6.1: Compile your program with `cargo build`
-
-6.2: Run your program using `./target/debug/hello-comp-423`
-
-6.3: Put it all in one command with `cargo run`
+# **Build & Check Out Your Program**
+## Step 6 Run It!
+6.1: Compile your program 
+````bash
+cargo build
+````
 !!! note
-    The cargo run command compiles the program and then runs it in just one step!
+    Similar to `gcc` used for compiling C programs.
+
+6.2: Run your program
+````bash
+./target/debug/hello-comp-423
+````
+
+6.3: Put it all in one command
+````bash
+cargo run
+````
+!!! note
+    The `cargo run` command compiles the program and then runs it in just one step!
+
+# **Save Your Work**
+## Step 7 Push to Git
+7.1: Stage changes 
+````bash
+git add .
+````
+7.2: Commit changes locally 
+````bash
+git commit -m "Hello COMP423 Complete"
+````
+7.3: Push changes 
+````bash
+git push -u origin
+````
+
+Well Done!
 
 
-
-Written in part with assistance from the COMP423 Starting a Static Website Project with MkDocs webpage.
+Written in part with assistance and inspiration from the [COMP423 Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/#step-2-configure-your-site) webpage.
